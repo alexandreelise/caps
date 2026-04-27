@@ -1,2 +1,56 @@
-# caps
+# CAPS
 An example of restricted capabilities using cgroups features directly in compose.yaml for Docker containers
+
+## PRE-REQUISITE:
+
+- Know how to use the command line
+- Know docker and docker compose basic commands 
+
+
+## USAGE:
+
+3 steps :
+
+Step 1:
+
+Clone this repo or use the example ```compose.yaml``` file and adapt it:
+
+```shell
+
+git clone https://github.com/alexandreelise/caps
+
+```
+
+Step 2:
+
+Go to the directory you just cloned and run that command in your terminal
+
+```shell
+
+cd caps &&
+APP_IMAGE=php:8.5-apache  docker compose up -d
+
+```
+
+or 
+
+```shell
+
+cd caps &&
+APP_IMAGE=replace_with_your_favourite_docker_image_here  docker compose up -d
+
+```
+
+Step 3:
+
+Run docker stats command to **VERIFY** the **CAPABILITIES** are **ACTUALLY** **RESTRICTED** as **EXPECTED**
+
+```shell
+
+docker stats
+
+```
+
+That's it! You have successfully mitigated resource exhaustion of your system.
+
+
