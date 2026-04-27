@@ -1,0 +1,16 @@
+networks:                                                                                                                                            
+   caps_net:                                                                                                                                           
+      internal: true                                                                                                                                    
+      labels:                                                                                                                                           
+         org.example.description: "An example of restricted capabilities network"                                                                       
+         org.example.title: "Restricted Capabilities Network"                                                                                           
+                                                                                                                                                       
+services:                                                                                                                                            
+      app:                                                                                                                                             
+          image: "${APP_IMAGE:?}" # Mandatory dynamically configurable custom app image                                                               
+          restart: always # restart always in PRODUCTION, otherwise you could change this to unless-stopped                                           
+          cpus: "${APP_CPUS:-0.01}" # 1% of CPU usage at most by default                                                                              
+          mem_limit: "${APP_MEM_LIMIT:-32m}" # 32MiB of RAM at most                                                                                   
+          mem_reservation: "${APP_MEM_RESERVATION:-16m}" # 16MiB of RAM at startup                                                                    
+          networks:                                                                                                                                   
+             - caps_net # internal network confined from outside connections    
