@@ -1,5 +1,5 @@
 # CAPS
-An example of restricted capabilities using cgroups features directly in compose.yaml for Docker containers
+An attempt to mitigate resource exhaustion using cgroups features directly in compose.yaml for Docker containers
 
 ## PRE-REQUISITE:
 
@@ -43,7 +43,7 @@ APP_IMAGE=replace_with_your_favourite_docker_image_here  docker compose up -d
 
 Step 3:
 
-Run docker stats command to **VERIFY** the **CAPABILITIES** are **ACTUALLY** **RESTRICTED** as **EXPECTED**
+Run docker stats command to **VERIFY** the **RESOURCES** are **ACTUALLY** **RESTRICTED** as **EXPECTED**
 
 ```shell
 
