@@ -43,11 +43,11 @@ APP_IMAGE=replace_with_your_favourite_docker_image_here  docker compose up -d
 
 Step 3:
 
-Run docker stats command to **VERIFY** the **RESOURCES** are **ACTUALLY** **RESTRICTED** as **EXPECTED**
+Run ```shell docker compose stats ``` command to **VERIFY** the **RESOURCES** are **ACTUALLY** **RESTRICTED** as **EXPECTED**
 
 ```shell
 
-docker stats
+docker compose stats
 
 ```
 
