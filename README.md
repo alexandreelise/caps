@@ -1,5 +1,14 @@
 # CAPS
-An attempt to mitigate resource exhaustion using cgroups features directly in compose.yaml for Docker containers
+
+> An attempt to mitigate resource exhaustion using cgroups features directly in compose.yaml for Docker containers
+
+> [!TIP]
+> Don't let technical problems KILL your AMBITIONS...
+
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=alexandreelise.caps&style=flat&format=true)
+![GitHub followers](https://img.shields.io/github/followers/alexandreelise?style=flat)
+![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCCya8rIL-PVHm8Mt4QPW-xw?style=flat&label=YouTube%20%40ApiAdept%20vues)
+
 
 ## PRE-REQUISITE:
 
